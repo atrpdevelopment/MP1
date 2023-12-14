@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>ATRP Development | Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <link rel="icon" href="assets/images/atrp.png">
+    </head>
+
+    <body>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <a href="index.html">
+                    <img class="nav-icon" src="assets/images/atrp.png">
+                </a>
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="index.html">Home</a>
+              <a href="scripts.html">Products</a>
+              <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <center>
+                <h2 class="welcome-text text"><b>Checkout</b></h2>
+                <div class="container">
+                    <p class="desc-text text"><b>Product Name: Custom Food Menu</b></p>
+                    <img class="center product-image" src="assets/images/foodmenu.png">
+                    <p>Price: ₱3,000</p>
+                </div>
+            
+                <div class="payment-options">
+                    <div class="payment-option" id="gcash-option" onclick="selectPaymentMethod('gcash')">GCash</div>
+                </div>
+
+                <div class="payment-options">
+                    <div class="payment-option" id="mastercard-option" onclick="selectPaymentMethod('mastercard')">Mastercard</div>
+                </div>
+
+                <div class="payment-options">
+                    <div class="payment-option" id="visa-option" onclick="selectPaymentMethod('visa')">VISA</div>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Full Name</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="text" id="fname" placeholder="Enter your Full Name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="did">Discord ID</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="text" id="did" placeholder="Enter your Discord ID">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="text" id="email" placeholder="Enter your Email Address">
+                        </div>
+                    </div>
+                </form>
+
+                <button class="button button5" onclick="checkout()">Checkout</button>
+            </center>
+
+            <div class="footer" style="margin-top: 320px;">
+                <p class="footer-par">
+                    <a href="https://discord.com/invite/zD89skzAh9"><i style="color: gray;" class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/atrpdevelopment"><i style="color: gray;" class="fa-brands fa-github"></i></a>
+                    <br>
+                    &copy; 2022 All Rights Reserved By ATRP Development
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
